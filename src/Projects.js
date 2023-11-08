@@ -22,7 +22,7 @@ function Projects() {
                         {projects.map((project) => (
                             <Col md={4} sm={12} key={project.id}>
                                 <div className="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-                                    <img src={project.photo} alt="" />
+                                    <img className='proimg' src={project.photo} alt="" />
                                     <h5>{project.title}</h5>
                                     <p>{project.description}</p>
                                     <a href={project.link} target="_blank">View</a>

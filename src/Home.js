@@ -5,6 +5,11 @@ import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import Footer from "./Footer";
 import { HashLink } from 'react-router-hash-link';
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
 
 
 function Home() {
@@ -80,7 +85,24 @@ function Home() {
           <h3>Latest builds.</h3>
           <Link to="/Projects">View Projects</Link>
         </div>
-      
+        <Swiper
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <Link to='https://watches-app.vercel.app/'>
+          <img src='\images\slider\Capture.PNG' alt=' ' className='simg' />
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link to='https://kudzoka-gamma-six.vercel.app/'>
+          <img src='\images\slider\Capture 2.PNG' alt=' ' className='simg'/>
+          </Link>
+        </SwiperSlide>
+      </Swiper>
       </section>
       {/* end third section */}
       {/* start fourth section  */}

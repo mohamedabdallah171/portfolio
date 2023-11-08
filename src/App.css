@@ -237,24 +237,29 @@ body {
 
 }
 
-.homesec3 .swiper-slide {
-  padding: 20px;
+.swiper {
+  width: 70%;
+  height: 70%;
 }
 
-.homesec3 .swiper-slide img {
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
   width: 100%;
-  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
 }
 
-.homesec3 .swiper-pagination-bullet {
-  background-color: #f87765;
-  height: 15px;
-  width: 15px;
-}
-
-.homesec3 .swiper-pagination {
-  bottom: 0 !important;
-}
 
 /* fourth section  */
 .homesec4 {
