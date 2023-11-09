@@ -25,8 +25,8 @@ function Footer() {
                   
                 </Row>
                 <div className="copyright wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <p>© 2022 Your Name</p>
-                    <p>Email: info@shilohcreative.com</p>
+                    <p>© 2022 Mohamed Abdallah</p>
+                    <p>Email: mohamedabdallahma9001071</p>
                 </div>
             </Container>
         </footer>
